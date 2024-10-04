@@ -10,24 +10,17 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        macro_ver: macro_ver {
-            compatible = "zmk,behavior-macro";
-            label = "macro_version";
-            #binding-cells = <0>;
-            bindings = <&kp RET>;
-        };
-
         euro_macro: euro_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp NUMBER_2 &kp NUMBER_0 &kp A &kp C>;
+            bindings = <&kp LC(LS(U)) &kp NUMBER_2 &kp NUMBER_0 &kp A &kp C &kp ENTER>;
             label = "EURO_MACRO";
         };
 
         sz_macro: sz_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp NUMBER_0 &kp NUMBER_0 &kp D &kp F>;
+            bindings = <&kp LC(LS(U)) &kp NUMBER_0 &kp NUMBER_0 &kp D &kp F &kp ENTER>;
             label = "SZ_MACRO";
         };
 
